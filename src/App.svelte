@@ -176,7 +176,7 @@
           <a href="https://pixelgrids.netlify.com">Pixel Grids</a>
         </li>
         <li>
-          <a href="https://frosty-hypatia-1693bf.netlify.com">Grid Calc</a>
+          <a href="https://grid-calc.netlify.com">Grid Calc</a>
         </li>
       </ul>
     </div>
