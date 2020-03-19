@@ -1,30 +1,82 @@
 <script>
-	export let name;
+  import { onMount } from "svelte";
+  import { fly } from "svelte/transition";
+  import { cubicOut } from "svelte/easing";
+  import { backInOut } from "svelte/easing";
+
+  let number = 0;
+
+  onMount(() => {
+    const interval = setInterval(() => {
+      if (number < 3) {
+        number += 1;
+      } else {
+        number = 0;
+      }
+    }, 2000);
+
+    return () => clearInterval(interval);
+  });
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
-
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
+  span {
+    display: inline-block;
+  }
 </style>
+
+<main>
+  <!-- {#if number === 0}
+    <p
+      in:fly={{ y: 20, duration: 400, delay: 400, easing: backInOut }}
+      out:fly={{ y: -20, duration: 400, easing: backInOut }}>
+      Cool interfaces
+    </p>
+  {:else if number === 1}
+    <p
+      in:fly={{ y: 20, duration: 400, delay: 400, easing: backInOut }}
+      out:fly={{ y: -20, duration: 400, easing: backInOut }}>
+      Snazzy apps
+    </p>
+  {:else if number === 2}
+    <p
+      in:fly={{ y: 20, duration: 400, delay: 400, easing: backInOut }}
+      out:fly={{ y: -20, duration: 400, easing: backInOut }}>
+      Neat iconsets
+    </p>
+  {:else if number === 3}
+    <p
+      in:fly={{ y: 20, duration: 400, delay: 400, easing: backInOut }}
+      out:fly={{ y: -20, duration: 400, easing: backInOut }}>
+      Boss utilities
+    </p>
+  {/if} -->
+  <p>
+    Things I make:
+    {#if number === 0}
+      <span
+        in:fly={{ y: 20, duration: 400, delay: 400, easing: backInOut }}
+        out:fly={{ y: -20, duration: 400, easing: backInOut }}>
+        Cool interfaces
+      </span>
+    {:else if number === 1}
+      <span
+        in:fly={{ y: 20, duration: 400, delay: 400, easing: backInOut }}
+        out:fly={{ y: -20, duration: 400, easing: backInOut }}>
+        Snazzy apps
+      </span>
+    {:else if number === 2}
+      <span
+        in:fly={{ y: 20, duration: 400, delay: 400, easing: backInOut }}
+        out:fly={{ y: -20, duration: 400, easing: backInOut }}>
+        Neat iconsets
+      </span>
+    {:else if number === 3}
+      <span
+        in:fly={{ y: 20, duration: 400, delay: 400, easing: backInOut }}
+        out:fly={{ y: -20, duration: 400, easing: backInOut }}>
+        Boss utilities
+      </span>
+    {/if}
+  </p>
+</main>
