@@ -180,25 +180,6 @@
         </li>
       </ul>
     </div>
-    <div class="project">
-      <h2>Plugins</h2>
-      <ul>
-        <li>
-          <a href="https://www.figma.com/@dannymcclain">Swap Width & Height</a>
-        </li>
-        <li>
-          <a href="https://www.figma.com/@dannymcclain">Sort Layers</a>
-        </li>
-        <li>
-          <a href="https://www.figma.com/@dannymcclain">Fit to Parent</a>
-        </li>
-        <li>
-          <a href="https://www.figma.com/@dannymcclain">
-            Rename Layer to Hex Fill
-          </a>
-        </li>
-      </ul>
-    </div>
   </section>
   <section>
     <h2>Currently</h2>
