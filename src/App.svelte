@@ -97,6 +97,11 @@
   a:hover {
     color: #fff;
   }
+  em {
+    font-style: italic;
+    margin-top: 8px;
+    display: inline-block;
+  }
   @media (min-width: 700px) {
     main {
       padding: 40px;
@@ -160,7 +165,7 @@
       learning because learning is fun.
     </p>
     <p>
-      I like designing interfaces, systems, and icons. I’m also weirdly
+      I like designing interfaces, systems, and icons. I’m also pretty
       passionate about efficiency and organization so I like to design and build
       tools, apps, and plugins that speed up my workflow.
     </p>
@@ -177,6 +182,9 @@
         </li>
         <li>
           <a href="https://grid-calc.netlify.com">Grid Calc</a>
+        </li>
+        <li>
+          <em>Plugins & more coming soon...</em>
         </li>
       </ul>
     </div>
