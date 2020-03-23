@@ -175,13 +175,13 @@
       <h2>Misc. Utilities</h2>
       <ul>
         <li>
-          <a href="https://ratio-calc.netlify.com">Ratio</a>
+          <a href="https://ratio.dannymcclain.com">Ratio</a>
         </li>
         <li>
           <a href="https://pixelgrids.netlify.com">Pixel Grids</a>
         </li>
         <li>
-          <a href="https://grid-calc.netlify.com">Grid Calc</a>
+          <a href="https://gridcalc.dannymcclain.com">Grid Calc</a>
         </li>
         <li>
           <em>Plugins & more coming soon...</em>
