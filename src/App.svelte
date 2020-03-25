@@ -178,7 +178,7 @@
           <a href="https://ratio.dannymcclain.com">Ratio</a>
         </li>
         <li>
-          <a href="https://gridfinder.dannymcclain.com">Pixel Grids</a>
+          <a href="https://gridfinder.dannymcclain.com">Grid Finder</a>
         </li>
         <li>
           <a href="https://gridcalc.dannymcclain.com">Grid Calc</a>
