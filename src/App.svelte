@@ -175,6 +175,9 @@
       <h2>Misc. Utilities</h2>
       <ul>
         <li>
+          <a href="https://www.figma.com/community/plugin/917796239623005893/Fitter">Fitter (Figma Plugin)</a>
+        </li>
+        <li>
           <a href="https://ratio.dannymcclain.com">Ratio</a>
         </li>
         <li>
