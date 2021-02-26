@@ -1,7 +1,7 @@
 <script>
   import Header from './Header.svelte'
 
-  export let sectionTitle = 'Section'
+  export let title = 'Section'
   export let src;
 </script>
 
@@ -16,16 +16,21 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 40px;
+    padding: 20px;
     /* Gray 5 */
     background: #1A1A1E;
     border-radius: 0 0 20px 20px;
     width: 100%;
   }
+  @media(min-width: 720px){
+    section {
+      padding: 40px;
+    }
+  }
 </style>
 
 <div>
-  <Header title={sectionTitle} {src} />
+  <Header title={title} {src} />
   <section>
     <slot></slot>
   </section>
