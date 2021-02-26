@@ -3,6 +3,7 @@
   import { fly } from "svelte/transition";
   import { cubicOut } from "svelte/easing";
   import { backInOut } from "svelte/easing";
+  import Section from './Components/Section.svelte';
 
   let number = 0;
 
@@ -20,16 +21,33 @@
 </script>
 
 <style>
-  :global(body) {
-    color: #808080;
-    background: #111;
-    font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", Courier,
-      monospace;
-    font-size: 14px;
-    line-height: 24px;
+  /* Mini Reset */
+  :global(*),
+  :global(*::after),
+  :global(*::before) {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   }
+
+  :global(body) {
+    color: #8E8E92;
+    background: #111112;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+  }
+
   main {
-    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    gap: 40px;
   }
   header {
     margin-bottom: 40px;
@@ -54,11 +72,13 @@
 
   h1,
   h2 {
-    font-size: 14px;
-    line-height: 24px;
-    color: #fff;
     font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
   }
+
   h1 {
     position: relative;
   }
@@ -104,7 +124,7 @@
   }
   @media (min-width: 700px) {
     main {
-      padding: 40px;
+      grid-template-columns: 1fr 1fr;
     }
     header,
     section {
@@ -123,6 +143,13 @@
   }
 </style>
 
+<main>
+  <Section sectionTitle="Danny McClain" src="./images/Danny.svg">
+    <h1>Danny McClain</h1>
+    <p>I’m  a designer and developer homesteading with my wife and son in a little house out in the country.</p>
+  </Section>
+</main>
+<!-- 
 <main>
   <header>
     <h1>
@@ -221,4 +248,4 @@
       </li>
     </ul>
   </section>
-</main>
+</main> -->
